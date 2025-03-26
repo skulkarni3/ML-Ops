@@ -1,0 +1,3 @@
+{
+  "DecisionTreeClassifier_score_X_test_scaled": "DecisionTreeClassifier.score(X=X_test_scaled, y=y_test)"
+}
