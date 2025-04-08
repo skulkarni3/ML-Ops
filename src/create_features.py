@@ -65,8 +65,8 @@ test_new = pd.DataFrame.sparse.from_spmatrix(test_new)
 train_new['y'] = train_y
 test_new['y'] = test_y
 
-train_new.to_csv('data/processed_train_data.csv')
-test_new.to_csv('data/processed_test_data.csv')
+train_new.to_csv('data/processed_train_data_without_params.csv')
+test_new.to_csv('data/processed_test_data_without_params.csv')
 
 # Save pipeline
 with open('data/pipeline.pkl','wb') as f:
