@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/preprocessing.py
+    deps:
+    - path: src/preprocessing.py
+      hash: md5
+      md5: 15b6bacf517e7ffafce53fa6617cc3cf
+      size: 413
+    outs:
+    - path: data/x_test_by_dvc.parquet
+      hash: md5
+      md5: cf0b6fe861d2b5af8bda46b8c964b235
+      size: 13346
+    - path: data/x_train_by_dvc.parquet
+      hash: md5
+      md5: 6d5986cfe4313d424b1c18cc019679d7
+      size: 18369

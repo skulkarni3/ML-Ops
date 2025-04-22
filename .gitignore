@@ -1,0 +1,41 @@
+# ----------------------------
+# DVC & Data-related
+# ----------------------------
+data/*
+!data/*.dvc                # Keep DVC tracking files
+dvc.yaml
+params.yaml
+src/predictions.csv
+
+# ----------------------------
+# Model & Output Artifacts
+# ----------------------------
+*.pkl
+*.csv
+*.yaml
+*.png
+
+# ----------------------------
+# MLflow Artifacts (models, runs, tracking dbs)
+# ----------------------------
+**/mlruns/
+**/mlflow.db
+*.db
+mlruns/
+src/mlruns/
+notebooks/mlruns/
+mlflow_test/mlflow-deployment.yaml
+mlflow_test/mlflow-service.yaml
+
+# ----------------------------
+# Metaflow-related
+# ----------------------------
+.metaflow/
+**/.metaflow/
+metaflow-tools/            # Embedded repo you want ignored
+
+# ----------------------------
+# System & IDE files
+# ----------------------------
+.DS_Store
+
