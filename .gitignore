@@ -6,7 +6,7 @@ data/*
 dvc.yaml
 params.yaml
 src/predictions.csv
-
+src/bank-loan
 # ----------------------------
 # Model & Output Artifacts
 # ----------------------------
