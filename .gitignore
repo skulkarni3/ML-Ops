@@ -21,6 +21,7 @@ src/bank-loan
 **/mlruns/
 **/mlflow.db
 *.db
+*.joblib
 mlruns/
 src/mlruns/
 notebooks/mlruns/
