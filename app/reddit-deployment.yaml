@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reddit-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: reddit
+  template:
+    metadata:
+      labels:
+        app: reddit
+    spec:
+      containers:
+      - name: reddit
+        image: reddit-comment-classifier:latest           # GCP location that I specified in Docker: gcr.io/msds603-reddit-app-deployment/reddit-comment-classifier:v1 
+        imagePullPolicy: IfNotPresent #GCP: Always
+        ports:
+        - containerPort: 5000
+        

@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: reddit-service
+spec:
+  type: NodePort # GCP: LoadBalancer
+  selector:
+    app: reddit
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8000
+    nodePort: 30917  # Minikube will use a port like 30917 to expose the service locally, for GCP comment NodePort out entirely

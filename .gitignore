@@ -14,7 +14,8 @@ src/bank-loan
 *.csv
 *.yaml
 *.png
-
+!app/reddit-deployment.yaml
+!app/reddit-service.yaml
 # ----------------------------
 # MLflow Artifacts (models, runs, tracking dbs)
 # ----------------------------
